@@ -38,7 +38,6 @@ public class BaseTest {
                 .expectStatusLine("HTTP/1.1 200 OK")
                 .expectContentType(ContentType.JSON)
                 .expectResponseTime(Matchers.lessThan(5000L))
-                .expectHeader("Access-Control-Allow-Credentials", "true")
                 .build();
 
         reqSpec = new RequestSpecBuilder()

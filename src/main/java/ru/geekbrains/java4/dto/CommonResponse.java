@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @JsonPropertyOrder({
         "data",
         "success",
-        "status"
+        "status",
+
 })
 
 @NoArgsConstructor

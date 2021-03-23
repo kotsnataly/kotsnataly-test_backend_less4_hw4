@@ -8,7 +8,7 @@ import ru.geekbrains.java4.dto.PostImageResponse;
 import ru.geekbrains.java4.utils.FileEncodingUtils;
 
 import static io.restassured.RestAssured.given;
-@UtilityClass
+
 public class CommonRequests {
 
     public static PostImageResponse uploadCommonImage(RequestSpecification spec) {

@@ -3,13 +3,12 @@ package ru.geekbrains.java4.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-
 public class GetAccountResponse extends CommonResponse<GetAccountResponse.AccountData> {
 
     @Data
     public static class AccountData {
         @JsonProperty("id")
-        private Integer id;
+        private String id;
         @JsonProperty("url")
         private String url;
         @JsonProperty("bio")

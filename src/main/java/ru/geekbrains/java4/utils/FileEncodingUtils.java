@@ -1,15 +1,18 @@
 package ru.geekbrains.java4.utils;
 
-import lombok.experimental.UtilityClass;
 import ru.geekbrains.java4.Images;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 
-@UtilityClass
+
 public class FileEncodingUtils {
-    static final String INPUT_IMAGE_FILE_PATH = Images.POSITIVE.path;
-    public byte[] getFileContent() {
+
+    public static String INPUT_IMAGE_FILE_PATH = Images.POSITIVE.path;
+
+    public static byte[] getFileContent() {
+
         File inputFile = new File(INPUT_IMAGE_FILE_PATH);
 
         byte[] fileContent = new byte[0];
